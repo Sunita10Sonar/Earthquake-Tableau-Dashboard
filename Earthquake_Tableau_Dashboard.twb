@@ -1,0 +1,3444 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+        <calculation class='tableau' formula='#1900-01-05#' />
+        <range max='#2014-03-17#' min='#1900-01-05#' />
+      </column>
+      <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+        <calculation class='tableau' formula='#2009-08-28#' />
+        <range max='#2014-03-17#' min='#1900-01-05#' />
+      </column>
+    </datasource>
+    <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' inline='true' name='federated.16g9vz41cjj30413a721m0ce5vyj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Mag6PlusEarthquakes_1900-2013' name='excel-direct.1nwfo9l1t8vr021ci39s315v5sl6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/DELL/Downloads/Mag6PlusEarthquakes_1900-2013.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1nwfo9l1t8vr021ci39s315v5sl6' name='query' table='[query$]' type='table'>
+          <columns gridOrigin='A1:R8314:no:A1:R8314:0' header='yes' outcome='6'>
+            <column datatype='string' name='time' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='datetime' name='Time' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='latitude' ordinal='4' />
+            <column datatype='real' name='longitude' ordinal='5' />
+            <column datatype='real' name='depth' ordinal='6' />
+            <column datatype='real' name='mag' ordinal='7' />
+            <column datatype='string' name='magType' ordinal='8' />
+            <column datatype='integer' name='nst' ordinal='9' />
+            <column datatype='real' name='gap' ordinal='10' />
+            <column datatype='real' name='dmin' ordinal='11' />
+            <column datatype='real' name='rms' ordinal='12' />
+            <column datatype='string' name='net' ordinal='13' />
+            <column datatype='string' name='id' ordinal='14' />
+            <column datatype='string' name='updated' ordinal='15' />
+            <column datatype='string' name='place' ordinal='16' />
+            <column datatype='string' name='type' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[query]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:R8314:no:A1:R8314:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[time]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[depth]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>depth</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mag</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mag]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>mag</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>magType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[magType]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>magType</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nst</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nst]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>nst</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gap]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>gap</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dmin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dmin]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>dmin</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rms]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>rms</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[net]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>net</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[updated]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>updated</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>place</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[place]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>place</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[query]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='Total Earthquakes' datatype='string' name='[Calculation_1422293073284071426]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Earthquakes&quot;' />
+      </column>
+      <column caption='Average Dmin' datatype='string' name='[Calculation_1422293073284386819]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Average Dmin&quot;' />
+      </column>
+      <column caption='Average Depth' datatype='string' name='[Calculation_1422293073284554756]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Average Depth&quot;' />
+      </column>
+      <column caption='Average Gap' datatype='string' name='[Calculation_1422293073284673541]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Average Gap&quot;' />
+      </column>
+      <column caption='Average Nst' datatype='string' name='[Calculation_1422293073284788230]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Average Nst&quot;' />
+      </column>
+      <column caption='Average Rms' datatype='string' name='[Calculation_1422293073285058567]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Average Rms&quot;' />
+      </column>
+      <column caption='Max Gap' datatype='string' name='[Calculation_1422293073285197832]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Max Gap&quot;' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Depth (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[depth]' peg='0' size='50' />
+      </column>
+      <column datatype='real' hidden='true' name='[F4]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Mag (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[mag]' peg='0' size='0.25' />
+      </column>
+      <column caption='query' datatype='table' name='[__tableau_internal_object_id__].[query_C509B56963F849B785C9356EAB7176C5]' role='measure' type='quantitative' />
+      <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+      <column caption='Dmin' datatype='real' name='[dmin]' role='measure' type='quantitative' />
+      <column caption='Gap' datatype='real' name='[gap]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Mag Type' datatype='string' name='[magType]' role='dimension' type='nominal' />
+      <column caption='Mag' datatype='real' name='[mag]' role='measure' type='quantitative' />
+      <column caption='Net' datatype='string' name='[net]' role='dimension' type='nominal' />
+      <column caption='Nst' datatype='integer' name='[nst]' role='measure' type='quantitative' />
+      <column caption='Place' datatype='string' name='[place]' role='dimension' type='nominal' />
+      <column caption='Rms' datatype='real' name='[rms]' role='measure' type='quantitative' />
+      <column caption='Time1' datatype='string' name='[time]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Updated' datatype='string' name='[updated]' role='dimension' type='nominal' />
+      <column-instance column='[magType]' derivation='None' name='[none:magType:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/Downloads/archive/Mag6PlusEarthquakes_1900-2013.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/19/2024 09:53:59 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Date]' value='[Extract].[Date]' />
+            <map key='[Time]' value='[Extract].[Time]' />
+            <map key='[depth]' value='[Extract].[depth]' />
+            <map key='[dmin]' value='[Extract].[dmin]' />
+            <map key='[gap]' value='[Extract].[gap]' />
+            <map key='[id]' value='[Extract].[id]' />
+            <map key='[latitude]' value='[Extract].[latitude]' />
+            <map key='[longitude]' value='[Extract].[longitude]' />
+            <map key='[magType]' value='[Extract].[magType]' />
+            <map key='[mag]' value='[Extract].[mag]' />
+            <map key='[net]' value='[Extract].[net]' />
+            <map key='[nst]' value='[Extract].[nst]' />
+            <map key='[place]' value='[Extract].[place]' />
+            <map key='[rms]' value='[Extract].[rms]' />
+            <map key='[time]' value='[Extract].[time1]' />
+            <map key='[type]' value='[Extract].[type]' />
+            <map key='[updated]' value='[Extract].[updated]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>time1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8313</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>query</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4131</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>2</ordinal>
+              <family>query</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6727</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4064</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>4</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4272</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>depth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[depth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>depth</remote-alias>
+              <ordinal>5</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1262</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mag</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mag</remote-alias>
+              <ordinal>6</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>magType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[magType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>magType</remote-alias>
+              <ordinal>7</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nst</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nst]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nst</remote-alias>
+              <ordinal>8</ordinal>
+              <family>query</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>929</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gap</remote-alias>
+              <ordinal>9</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>397</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dmin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dmin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dmin</remote-alias>
+              <ordinal>10</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>217</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rms</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rms</remote-alias>
+              <ordinal>11</ordinal>
+              <family>query</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[net]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net</remote-alias>
+              <ordinal>12</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>13</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8313</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[updated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated</remote-alias>
+              <ordinal>14</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1437</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>place</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[place]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>place</remote-alias>
+              <ordinal>15</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>608</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>16</ordinal>
+              <family>query</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[query_C509B56963F849B785C9356EAB7176C5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='0.917197' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0828025' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:magType:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;mwp&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mt&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;mwr&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;mw&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;mb&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;mwb&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mww&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;mwc&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;mj&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;uk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;ms&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+          <calculation class='tableau' formula='#1900-01-05#' />
+          <range max='#2014-03-17#' min='#1900-01-05#' />
+        </column>
+        <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+          <calculation class='tableau' formula='#2009-08-28#' />
+          <range max='#2014-03-17#' min='#1900-01-05#' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='query' id='query_C509B56963F849B785C9356EAB7176C5'>
+            <properties context=''>
+              <relation connection='excel-direct.1nwfo9l1t8vr021ci39s315v5sl6' name='query' table='[query$]' type='table'>
+                <columns gridOrigin='A1:R8314:no:A1:R8314:0' header='yes' outcome='6'>
+                  <column datatype='string' name='time' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='datetime' name='Time' ordinal='2' />
+                  <column datatype='real' name='F4' ordinal='3' />
+                  <column datatype='real' name='latitude' ordinal='4' />
+                  <column datatype='real' name='longitude' ordinal='5' />
+                  <column datatype='real' name='depth' ordinal='6' />
+                  <column datatype='real' name='mag' ordinal='7' />
+                  <column datatype='string' name='magType' ordinal='8' />
+                  <column datatype='integer' name='nst' ordinal='9' />
+                  <column datatype='real' name='gap' ordinal='10' />
+                  <column datatype='real' name='dmin' ordinal='11' />
+                  <column datatype='real' name='rms' ordinal='12' />
+                  <column datatype='string' name='net' ordinal='13' />
+                  <column datatype='string' name='id' ordinal='14' />
+                  <column datatype='string' name='updated' ordinal='15' />
+                  <column datatype='string' name='place' ordinal='16' />
+                  <column datatype='string' name='type' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.16g9vz41cjj30413a721m0ce5vyj'>
+      <datasources>
+        <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+        <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+          <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+        </column>
+        <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]'>
+        <groupfilter function='member' level='[none:Calculation_1422293073283387393:ok]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Depth in KM Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column aggregation='None' datatype='integer' name='[Depth (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[depth]' peg='0' size='50' />
+            </column>
+            <column-instance column='[depth]' derivation='Count' name='[cnt:depth:qk]' pivot='key' type='quantitative' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Depth (bin)]' derivation='None' name='[none:Depth (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Depth (bin):qk]' scope='cols' value='Depth' />
+            <format attr='title' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:depth:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:depth:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:depth:qk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:depth:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:depth:qk]</rows>
+        <cols>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Depth (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[Depth (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{F0C13442-C229-42FF-BC2A-97773A2BBE00}' />
+    </worksheet>
+    <worksheet name='Earthquake Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AD364FD9-97CE-4BAA-9987-43931CB35F2B}' />
+    </worksheet>
+    <worksheet name='Earthquake Details with Total Nst'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column caption='Mag' datatype='real' name='[mag]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[depth]' derivation='None' name='[none:depth:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[mag]' derivation='None' name='[none:mag:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[place]' derivation='None' name='[none:place:nk]' pivot='key' type='nominal' />
+            <column caption='Nst' datatype='integer' name='[nst]' role='measure' type='quantitative' />
+            <column caption='Place' datatype='string' name='[place]' role='dimension' type='nominal' />
+            <column-instance column='[nst]' derivation='Sum' name='[sum:nst:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Date:ok]' direction='DESC' measure-to-sort-by='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Date:ok]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:place:nk]' value='240' />
+            <format attr='width' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Date:ok]' value='152' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#555555' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Date:ok]' value='*d mmmm, yyyy' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#555555' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-level' scope='rows' value='3' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[sum:nst:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16g9vz41cjj30413a721m0ce5vyj].[none:Date:ok] / ([federated.16g9vz41cjj30413a721m0ce5vyj].[none:place:nk] / ([federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:ok] / [federated.16g9vz41cjj30413a721m0ce5vyj].[none:depth:ok])))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{222885C5-A033-4808-9CA3-582BA8FD1B2D}' />
+    </worksheet>
+    <worksheet name='Magnitude Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column aggregation='None' datatype='integer' name='[Mag (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-2' formula='[mag]' peg='0' size='0.25' />
+            </column>
+            <column-instance column='[mag]' derivation='Count' name='[cnt:mag:qk]' pivot='key' type='quantitative' />
+            <column caption='Mag' datatype='real' name='[mag]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Mag (bin)]' derivation='None' name='[none:Mag (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Mag (bin):qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Mag (bin):qk]</column>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Mag (bin):qk]' scope='cols' value='Magnitude' />
+            <format attr='title' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:mag:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:mag:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:mag:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:mag:qk]</rows>
+        <cols>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Mag (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[Mag (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{5A865F45-74DA-4818-9FB5-1A7A5EA0E828}' />
+    </worksheet>
+    <worksheet name='Relationship between Depth and Magnitude'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column caption='Mag' datatype='real' name='[mag]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[depth]' derivation='None' name='[none:depth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mag]' derivation='None' name='[none:mag:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:qk]</column>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='0.60370165109634399' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:qk]</rows>
+        <cols>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:depth:qk]</cols>
+        <show-full-range>
+          <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[Depth (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6E314CD8-EE2B-49CF-81AE-7E8B8C5ED478}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Total Earthquakes' datatype='string' name='[Calculation_1422293073284071426]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Earthquakes&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073284071426]' derivation='None' name='[none:Calculation_1422293073284071426:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073284071426:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{03C0C840-0F76-4397-819C-DE1B02A97AA8}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Average Dmin' datatype='string' name='[Calculation_1422293073284386819]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Average Dmin&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[dmin]' derivation='Avg' name='[avg:dmin:qk]' pivot='key' type='quantitative' />
+            <column caption='Dmin' datatype='real' name='[dmin]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073284386819]' derivation='None' name='[none:Calculation_1422293073284386819:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073284386819:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:dmin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4ADA2D58-B75A-42F7-A25A-80C9210BD327}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Average Gap' datatype='string' name='[Calculation_1422293073284673541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Average Gap&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[gap]' derivation='Avg' name='[avg:gap:qk]' pivot='key' type='quantitative' />
+            <column caption='Gap' datatype='real' name='[gap]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073284673541]' derivation='None' name='[none:Calculation_1422293073284673541:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073284673541:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:gap:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D6CFF38D-FCD0-4C70-98E6-2437ABE9881A}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (4)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Average Nst' datatype='string' name='[Calculation_1422293073284788230]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Average Nst&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[nst]' derivation='Avg' name='[avg:nst:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073284788230]' derivation='None' name='[none:Calculation_1422293073284788230:nk]' pivot='key' type='nominal' />
+            <column caption='Nst' datatype='integer' name='[nst]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073284788230:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:nst:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4991389A-AFA9-4093-BE36-1E81E13D26FD}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (5)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Average Depth' datatype='string' name='[Calculation_1422293073284554756]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Average Depth&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[depth]' derivation='Avg' name='[avg:depth:qk]' pivot='key' type='quantitative' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073284554756]' derivation='None' name='[none:Calculation_1422293073284554756:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073284554756:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:depth:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8B334759-8793-4388-834F-87DBF9FE44D1}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (6)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Average Rms' datatype='string' name='[Calculation_1422293073285058567]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Average Rms&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[rms]' derivation='Avg' name='[avg:rms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073285058567]' derivation='None' name='[none:Calculation_1422293073285058567:nk]' pivot='key' type='nominal' />
+            <column caption='Rms' datatype='real' name='[rms]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073285058567:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:rms:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1F24ED3C-B80A-4C4E-8A59-40940721AD9A}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (7)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Max Gap' datatype='string' name='[Calculation_1422293073285197832]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Max Gap&quot;' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Gap' datatype='real' name='[gap]' role='measure' type='quantitative' />
+            <column-instance column='[gap]' derivation='Max' name='[max:gap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073285197832]' derivation='None' name='[none:Calculation_1422293073285197832:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073285197832:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[max:gap:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{01D01E2C-8152-4E09-B660-6FCD18EA95DF}' />
+    </worksheet>
+    <worksheet name='Total Earthquake by Month and Type (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column caption='Mag Type' datatype='string' name='[magType]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[magType]' derivation='None' name='[none:magType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[mn:Date:ok]' value='iLLL' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='total' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#ffffff4b' />
+            <format attr='text-format' id='refline0' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' />
+              <text column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]</rows>
+        <cols>[federated.16g9vz41cjj30413a721m0ce5vyj].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{415EC488-C2B7-4943-AEFB-8DB77909A558}' />
+    </worksheet>
+    <worksheet name='Total Earthquake by Year and Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column caption='Mag Type' datatype='string' name='[magType]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[magType]' derivation='None' name='[none:magType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[yr:Date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='total' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#ffffff4b' />
+            <format attr='text-format' id='refline0' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' id='legend-color' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' id='legend-color' value='#ffffff' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' id='legend-color' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' value-column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]</rows>
+        <cols>[federated.16g9vz41cjj30413a721m0ce5vyj].[yr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{9CE5E00F-1735-4062-8E9D-6DE8EC71DB3D}' />
+    </worksheet>
+    <worksheet name='Total Earthquakes by Places'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='query (Mag6PlusEarthquakes_1900-2013)' name='federated.16g9vz41cjj30413a721m0ce5vyj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+              <calculation class='tableau' formula='#1900-01-05#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+            <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+              <calculation class='tableau' formula='#2009-08-28#' />
+              <range max='#2014-03-17#' min='#1900-01-05#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.16g9vz41cjj30413a721m0ce5vyj'>
+            <column aggregation='Sum' caption='Study period' datatype='integer' name='[Calculation_1422293073283387393]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='If [Date] &gt;=  [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2] THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[depth]' derivation='Avg' name='[avg:depth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gap]' derivation='Avg' name='[avg:gap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mag]' derivation='Avg' name='[avg:mag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column caption='Gap' datatype='real' name='[gap]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Mag' datatype='real' name='[mag]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1422293073283387393]' derivation='None' name='[none:Calculation_1422293073283387393:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[place]' derivation='None' name='[none:place:nk]' pivot='key' type='nominal' />
+            <column caption='Place' datatype='string' name='[place]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.16g9vz41cjj30413a721m0ce5vyj].[none:Calculation_1422293073283387393:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:longitude:qk]' field-type='quantitative' max='31244172.551556826' min='2589346.4965473358' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:latitude:qk]' field-type='quantitative' max='11243807.697903797' min='-6187878.607683165' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' id='legend-color' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' id='legend-color' value='#ffffff' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' id='legend-color' value='#ffffff' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' id='legend-color' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' id='legend-color' value='8' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' />
+              <size column='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' />
+              <lod column='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:place:nk]' />
+              <tooltip column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:depth:qk]' />
+              <tooltip column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:gap:qk]' />
+              <tooltip column='[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:mag:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.80160218477249146' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:latitude:qk]</rows>
+        <cols>[federated.16g9vz41cjj30413a721m0ce5vyj].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{DD6BF2A1-5F24-45D8-8751-3DE42F357F7E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Earthquake'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <_.fcp.IndividualControlFormatting.true...style-rule element='parameter-ctrl'>
+          <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[Parameters].[Parameter 1]' value='solid' />
+          <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[Parameters].[Parameter 1]' value='#ffffff' />
+          <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[Parameters].[Parameter 2]' value='solid' />
+          <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[Parameters].[Parameter 2]' value='#ffffff' />
+        </_.fcp.IndividualControlFormatting.true...style-rule>
+        <_.fcp.IndividualControlFormatting.true...style-rule element='parameter-ctrl-title'>
+          <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[Parameters].[Parameter 1]' value='bold' />
+          <_.fcp.IndividualControlFormatting.true...format attr='color' field='[Parameters].[Parameter 1]' value='#ffffff' />
+          <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[Parameters].[Parameter 1]' value='8' />
+          <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[Parameters].[Parameter 2]' value='8' />
+          <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[Parameters].[Parameter 2]' value='bold' />
+          <_.fcp.IndividualControlFormatting.true...format attr='color' field='[Parameters].[Parameter 2]' value='#ffffff' />
+        </_.fcp.IndividualControlFormatting.true...style-rule>
+      </style>
+      <size maxheight='1150' maxwidth='1850' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Start Date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#1900-01-05#'>
+          <calculation class='tableau' formula='#1900-01-05#' />
+          <range max='#2014-03-17#' min='#1900-01-05#' />
+        </column>
+        <column caption='End Date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2009-08-28#'>
+          <calculation class='tableau' formula='#2009-08-28#' />
+          <range max='#2014-03-17#' min='#1900-01-05#' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88654' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='10347'>
+            <zone h='88654' id='5' type-v2='layout-basic' w='99034' x='483' y='10347'>
+              <zone h='44347' id='3' name='Total Earthquake by Year and Type' w='39114' x='27505' y='54654'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40898' id='11' name='Total Earthquakes by Places' w='32898' x='66619' y='58103'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29568' id='14' name='Relationship between Depth and Magnitude' w='27022' x='483' y='69433'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22677' id='16' name='Magnitude Histogram' w='27022' x='483' y='17200'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29556' id='18' name='Depth in KM Histogram' w='27022' x='483' y='39877'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40903' id='20' name='Total Earthquake by Month and Type (2)' w='32898' x='66619' y='17200'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37454' id='22' name='Earthquake Details with Total Nst' w='39114' x='27505' y='17200'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='23' name='Sheet 1' show-title='false' w='13505' x='483' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='24' name='Sheet 1 (2)' show-title='false' w='13517' x='13988' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='25' name='Sheet 1 (3)' show-title='false' w='12970' x='27505' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='26' name='Sheet 1 (4)' show-title='false' w='13184' x='53435' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='27' name='Sheet 1 (5)' show-title='false' w='16334' x='66619' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='28' name='Sheet 1 (6)' show-title='false' w='16564' x='82953' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6853' id='29' name='Sheet 1 (7)' show-title='false' w='12960' x='40475' y='10347'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9348' id='21' type-v2='layout-flow' w='30886' x='483' y='999'>
+            <zone h='9348' id='10' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='30886' x='483' y='999'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9348' id='9' mode='slider' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='29578' x='69939' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9348' id='30' name='Earthquake Dashboard' w='38570' x='31369' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4619' id='13' name='Total Earthquakes by Places' pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' show-title='false' type-v2='color' w='9173' x='89439' y='65044' />
+        <zone h='16979' id='8' name='Total Earthquake by Year and Type' pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' type-v2='color' w='20760' x='30115' y='59675' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2950' minheight='2950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='35' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone h='9348' id='10' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='30886' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='9348' id='30' is-fixed='true' name='Earthquake Dashboard' w='38570' x='31369' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9348' id='9' mode='slider' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='29578' x='69939' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='23' is-fixed='true' name='Sheet 1' show-title='false' w='13505' x='483' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='24' is-fixed='true' name='Sheet 1 (2)' show-title='false' w='13517' x='13988' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='25' is-fixed='true' name='Sheet 1 (3)' show-title='false' w='12970' x='27505' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='29' is-fixed='true' name='Sheet 1 (7)' show-title='false' w='12960' x='40475' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='26' is-fixed='true' name='Sheet 1 (4)' show-title='false' w='13184' x='53435' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='27' is-fixed='true' name='Sheet 1 (5)' show-title='false' w='16334' x='66619' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='6853' id='28' is-fixed='true' name='Sheet 1 (6)' show-title='false' w='16564' x='82953' y='10347'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='22677' id='16' is-fixed='true' name='Magnitude Histogram' w='27022' x='483' y='17200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37454' id='22' is-fixed='true' name='Earthquake Details with Total Nst' w='39114' x='27505' y='17200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40903' id='20' is-fixed='true' name='Total Earthquake by Month and Type (2)' w='32898' x='66619' y='17200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='29556' id='18' is-fixed='true' name='Depth in KM Histogram' w='27022' x='483' y='39877'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44347' id='3' is-fixed='true' name='Total Earthquake by Year and Type' w='39114' x='27505' y='54654'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16979' id='8' name='Total Earthquake by Year and Type' pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' type-v2='color' w='20760' x='30115' y='59675'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40898' id='11' is-fixed='true' name='Total Earthquakes by Places' w='32898' x='66619' y='58103'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4619' id='13' name='Total Earthquakes by Places' pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' show-title='false' type-v2='color' w='9173' x='89439' y='65044'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='29568' id='14' is-fixed='true' name='Relationship between Depth and Magnitude' w='27022' x='483' y='69433'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{67D4E907-8C8C-4AFC-9FD5-3358DEDFD9D5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BA561FE3-6DBE-407B-BA3D-2E43AC632C75}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{385B1537-53DD-4F18-BF77-B790D04EDD78}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F0B25F5-7E03-4376-9D7D-E0F94BD716D1}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33407D77-2A1E-41FF-8839-0032D24BCA0A}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0A547C34-B678-4B06-AE2A-0945CC291258}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (6)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C952EFF0-2D1E-4514-ABF0-958F690E7CF5}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (7)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{789352D1-DCA3-48FB-9093-1206366B13A2}' />
+    </window>
+    <window class='worksheet' name='Total Earthquake by Year and Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3ECF7AB6-6D47-4274-9C95-88D34FBC4904}' />
+    </window>
+    <window class='worksheet' name='Total Earthquake by Month and Type (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:magType:nk]' type='color' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7578BD2D-3E60-44B3-A466-26C308B3C2A8}' />
+    </window>
+    <window class='worksheet' name='Magnitude Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:mag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E4C1B4F3-6F94-41DD-BA70-3F78F3ACA780}' />
+    </window>
+    <window class='worksheet' name='Depth in KM Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:depth:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58275CCC-18C7-4B8F-9EFD-ADDFB2A6263A}' />
+    </window>
+    <window class='worksheet' name='Relationship between Depth and Magnitude'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[none:mag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92BDC35B-A6F0-472E-A031-81168EA25B01}' />
+    </window>
+    <window class='worksheet' name='Total Earthquakes by Places'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.16g9vz41cjj30413a721m0ce5vyj].[cnt:id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A91B31DF-6483-4253-8923-F970FB33448B}' />
+    </window>
+    <window class='worksheet' name='Earthquake Details with Total Nst'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6F6465D-FBB4-48CA-8E7C-B3DF262E4422}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Earthquake'>
+      <viewpoints>
+        <viewpoint name='Depth in KM Histogram'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Earthquake Dashboard' />
+        <viewpoint name='Earthquake Details with Total Nst' />
+        <viewpoint name='Magnitude Histogram'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Relationship between Depth and Magnitude'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 1 (2)' />
+        <viewpoint name='Sheet 1 (3)' />
+        <viewpoint name='Sheet 1 (4)' />
+        <viewpoint name='Sheet 1 (5)' />
+        <viewpoint name='Sheet 1 (6)' />
+        <viewpoint name='Sheet 1 (7)' />
+        <viewpoint name='Total Earthquake by Month and Type (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Earthquake by Year and Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Earthquakes by Places'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{0646E0D6-8370-40AA-8AC6-A92C72A8FCC2}' />
+    </window>
+    <window class='worksheet' name='Earthquake Dashboard'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{12B1B97B-EBD6-43C8-9285-2D0534D044FD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Earthquake' width='192'>
+      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
+      3EUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
